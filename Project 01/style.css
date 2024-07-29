@@ -18,12 +18,12 @@ html, body {
 }
 
 #left {
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 
 #right {
-    width: 25%;
+    width: 20%;
     height: 100%;
     background-color: green;
 }
@@ -73,9 +73,49 @@ html, body {
 
 #right-top {
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 70%;
-    background-color: #313131;
+    background-color: rgb(203, 203, 203);
+    padding: 70px;
+}
+
+#right-top a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#right-top a:nth-child(3) {
+    position: relative;
+    margin-left: 30px;
+}
+
+#right-top a:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    top: 50%;
+    left: -30px;
+    
+}
+
+#icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    margin: 30px;
 }
 
 #right-bottom {
@@ -121,4 +161,6 @@ html, body {
     font-weight: 100;
     opacity: 0.5;
 }
+
+
 
