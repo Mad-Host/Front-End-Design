@@ -7,10 +7,103 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: "Gilroy-Regular ☞";
 }
 
 #main {
     width: 100%;
     height: 100%;
-    background-color: #212121;
+    background-image: url(https://images.unsplash.com/photo-1583844056361-4418a8f2a985?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #00000039;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+    gap: 40px;
+    width: 25%;
+    height: 100%;
+    background-color: #21212146;
+}
+
+.place {
+    width: 100%;
+    color: #fff;
+}
+
+.place h4 {
+    opacity: 0.9;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.place h6 {
+    margin-top: 8px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.place:nth-child(3) h4{
+    opacity: 1;
+    font-size: 55px;
+    white-space: nowrap;
+}
+
+.place:nth-child(3) h6 {
+    font-size: 18px;
+}
+
+#nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    color: #fff;
+    padding: 20px 50px;
+    z-index: 999;
+}
+
+#nav h2 {
+    /* font-size: 20px; */
+    font-family: "Montserrat";
+}
+
+#links {
+    display: flex;
+    gap: 20px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#links a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    bottom: 60%;
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#right {
+    width: 75%;
+    height: 100%;
 }
