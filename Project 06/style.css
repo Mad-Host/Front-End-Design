@@ -18,30 +18,37 @@ html, body {
     /* user-select: none; */
 }
 
-#main-img {
+#nav {
     position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 50%;
-    height: 90%;
-    background-image: url(background_img.png);
-    background-size: cover;
-    z-index: 999;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    font-family: "Ubuntu Mono";
+    /* padding: 5% 5%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#img-overlay {
-    position: relative;
-    width: 100%;
-    height: 100%;
+#nav h1 {
+    font-size: 26px;
 }
 
-#img-effect {
-    position: absolute;
-    left: 0%;
-    top: 50%;
-    width: 100%;
-    height: 45%;
-    background-color: #000;
+#links {
+    display: flex;
+    gap: 40px;
+}
+
+#links a {
+    font-family: "EA Sports Covers SC";
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+#links a:nth-child(1) {
+    margin-right: 700px;
 }
 
 #left {
@@ -100,3 +107,87 @@ html, body {
     height: 45%;
     background-color: #ff522f;
 }
+
+#overlay img {
+    position: absolute;
+    right: 10%;
+    bottom: -11%;
+}
+
+#img-overlay {
+    position: absolute;
+    z-index: 999;
+    right: 15%;
+    width: 40%;
+    height: 100%;
+    background-color: #ff52303b;
+}
+
+#overlay i {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    background-color: #000;
+    bottom: 0%;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rcontent {
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    height: 20%;
+}
+
+#rcontent h2 {
+    font-family: "Double Line 7";
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.4;
+}
+
+#rcontent-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-family: "EA Sports Covers SC";
+    font-size: xx-small;
+    opacity: 0.7;
+}
+
+#rcontent-text p {
+    width: 45%;
+}
+
+#lcontent {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 20%;
+    height: 30%;
+    /* background-color: #000; */
+    color: #000;
+    font-family: "Gilroy ☞";
+    transform: rotate(90deg);
+}
+
+#lcontent h2 {
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: #000;
+}
+
+
+
+
+
