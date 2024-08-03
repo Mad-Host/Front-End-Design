@@ -186,3 +186,11 @@ html, body {
     opacity: 0.5;
 }
 
+/* Responsive Web UI  */
+
+@media(max-width:500) {
+    #nav {
+        padding: 0px 10px;
+    }
+}
+
