@@ -10,83 +10,147 @@ html, body {
 }
 
 #main {
-    position: relative;
-    display: flex;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     /* background-color: #212121; */
-    background-image: url(https://images.unsplash.com/photo-1575737698350-52e966f924d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    font-family: "Gilroy-Regular ☞";
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw  ;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #dadada;
+}
+
+.nav h1 {
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    color: #000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    font-family: "SF Pro Display";
+    letter-spacing: 1px;
+}
+
+.nav i {
+    display: none;
+
+}
+
+.main-content {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+.left-content {
+    width: 50%;
+    height: 100%;
+    color: #000;
+    padding: 5vw 4vw;
+    background-color: #fff;
+}
+
+.left-content h1 {
+    font-family: "Gilroy-Regular ☞";
+    font-size: 4.5vw;
+    font-weight: 900;
+}
+
+.left-content span {
+    color: green;
+    opacity: 0.7;
+}
+
+.left-content p {
+    font-size: 1.2vw;
+    opacity: 0.7;
+    font-weight: 550;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.left-content button {
+    margin-top: 4vw;  
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    border: none;
+    color: #dadada;
+    background-color: #212121;
+}
+
+.left-content button:hover {
+    color: #dadada;
+    background-color: #000;
+    font-size: 1vw;
+}
+
+.right-content {
+    width: 50%;
+    height: 100%;
+}
+
+.right-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     background-size: cover;
 }
 
-#overlay {
-    display: flex;
-    width: inherit;
-    height: inherit;
-    backdrop-filter: blur(5px);
+/* Responsive Developement */
+@media (max-width: 750px) {
+    .nav i {
+        display: initial;
+        font-size: 22px;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-content {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .left-content h1 {
+        font-size: 5vh;
+    }
+
+    .left-content p {
+        font-size: 1.4vh;
+    }
+
+    .left-content button {
+        margin-top: 40px;
+        font-size: 1.8vh;
+        padding: 1vh 2vh;
+    }
+
+    .left-content button:hover {
+        font-size: 1.8vh;
+        padding: 1vh 2vh;
+    }
+
+    .right-content {
+        width: 100%;
+        height: 50vh;
+    }
+
 }
-
-#left {
-    position: relative;
-    width: 50vw;
-    height: inherit;
-    /* background-color: #000; */
-}
-
-#left-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 50vh;
-    background-color: #000;
-
-}
-
-#right {
-    position: relative;
-    width: 50vw;
-    height: inherit;
-}
-
-#nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh 6vw ;
-    width: 100vw;
-    height: 10vh;
-    color: white;
-}
-
-#nav #links {
-    display: flex;
-    gap: 4vw;
-}
-
-#links a {
-    color: #fff;
-    text-decoration: none;
-    font-family: "Gilroy-Regular ☞";
-}
-
-#nav h4 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    width: 100px;
-    height: 35px;
-    background-color: #000;
-    border-radius: 25px;
-    font-family: "Gilroy-Regular ☞";
-}
-
-#nav i {
-    font-size: 4vw;
-}
-
-
-
-
